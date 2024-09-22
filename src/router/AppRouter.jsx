@@ -1,26 +1,23 @@
 //FICHERO DE DEFINICION DE RUTAS
 
-import { Navigate, Route, Routes } from "react-router-dom";
-import { MarvelPage } from "../heroes/pages/MarvelPage";
-import { DcPage } from "../heroes/pages/DcPage";
-import { LoginPage } from "../auth/pages/LoginPage";
+import {  Route, Routes } from "react-router-dom";
+
+
+import { LoginPage } from "../auth";
+
+import { HeroesRoutes } from "../heroes";
 
 export const AppRouter = () => {
 	return (
 		<>
+
 			<Routes>
-				<Route path="marvel" element={<MarvelPage />} />
-				<Route path="dc" element={<DcPage />} />
 
-
+				{/* Ruta del login */}
 				<Route path="login" element={<LoginPage />} />
 
-
-                        {/* Ruta con solo "/" que nos lleva a marvel */}
-				<Route path="/" element={<Navigate to='/marvel' />} />
-
-
-
+				{/* Resto de rutas que nos llevan al fichero de rutas de 'heroes' */}
+				<Route path="/*" element={<HeroesRoutes />} />
 
 			</Routes>
 		</>

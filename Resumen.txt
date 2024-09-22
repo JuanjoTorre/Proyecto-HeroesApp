@@ -12,6 +12,7 @@ Va a ser un proyecto con 'yarn'
 	            * git branch -M main
 	            * git push -u origin main
 
+*PROYECTO
 
 *Creamos donde irá el proyecto, en este caso 'react' y con la terminal nos dirigimos a su path.
 
@@ -29,13 +30,16 @@ Va a ser un proyecto con 'yarn'
 
 *Hacemos una limpieza de los archivos que sobran y creamos la estructura de carpetas que necesitemos
 
+
+*ROUTER
+
 *Instalamos el react router dom 'yarn add react-router-dom@6'  Estamos en la version 6 del react router dom
 
 *Importamos el BrowserRouter 'import { BrowserRouter } from "react-router-dom" ;' En el main.jsx
 
 *Envolvemos todo el return del main.jsx, por debajo del strictMode, con un '<BrowserRouter></BrowserRouter>'
 
-*Creamos una carpet donde iremos creando nuestras rutas
+*Creamos una carpeta donde iremos creando nuestras rutas
 
 *Creamos un fichero 'AppRouter.jsx' que sera donde definiremos las rutas de la siguiente manera
 
